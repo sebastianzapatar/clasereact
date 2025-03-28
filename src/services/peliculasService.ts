@@ -1,10 +1,10 @@
 import axios from 'axios';
 import { PeliculaData } from '../interfaces/pelicula';
 
-const API_KEY = 'bd7764fe'; // 🔒 Reemplazar por tu API Key real
-
+const API_URL = import.meta.env.VITE_API_URL;
+const API_KEY = import.meta.env.VITE_API_KEY;
 export const buscarPeliculas = async (titulo: string): Promise<PeliculaData[]> => {
-  const url = `https://www.omdbapi.com/?apikey=${API_KEY}&s=${titulo}`;
+  const url = `${API_URL}/?apikey=${API_KEY}&s=${titulo}`;
   const response = await axios.get(url);
 
   const data = response.data;
