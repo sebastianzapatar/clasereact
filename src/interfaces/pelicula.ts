@@ -13,4 +13,8 @@ export interface PeliculaData {
     esFavorita: boolean;
     onToggleFavorita: () => void;
   }
-  
+  export interface NuevaPelicula {
+    title: string;
+    year: number;
+    image: string;
+  }
