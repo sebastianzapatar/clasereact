@@ -14,7 +14,7 @@ const Pelicula: React.FC<PeliculaProps> = ({
         esFavorita ? 'bg-yellow-200' : 'bg-white'
       }`}
     >
-      <img src={image} alt={title} className="w-full h-48 object-cover rounded" />
+      <img src={image} alt={title}   className="w-full h-64 object-cover object-center rounded" />
       <h3 className="text-xl font-semibold mt-2">{title}</h3>
       <p className="text-gray-600">Año: {year}</p>
       <button

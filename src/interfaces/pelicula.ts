@@ -1,5 +1,5 @@
 export interface PeliculaData {
-    id: number;
+    id: string;
     title: string;
     year: number;
     image: string;
